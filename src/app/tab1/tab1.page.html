@@ -1,17 +1,55 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding" color="tertiary" >
+  
+  <!-- header -->
+<div class="header">
+  <ion-icon name="menu-outline" size="medium"></ion-icon>
+  <ion-searchbar class="searchbar" mode="ios" >
+    <ion-icon name="search"></ion-icon>
+  </ion-searchbar>
+</div>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<!-- options slide -->
+  <ion-slides   [options]="sliderConfig"  class="ion-padding" >
+    <ion-slide class="box1" >
+      <ion-icon name="restaurant-outline"></ion-icon>
+     <p>Resturants</p>
+    </ion-slide>
+    <ion-slide class="box1" >
+      <ion-icon name="cafe-outline"></ion-icon>
+     <p>Coffee Shop</p>
+    </ion-slide>
+    <ion-slide class="box1" >
+      <ion-icon name="fast-food-outline"></ion-icon>
+     <p>Resturants</p>
+    </ion-slide>
+    
+  </ion-slides>
+
+  <!-- popular food -->
+  <div class="tag">
+    <p>Popular Food</p>
+    <span>View All</span>
+  </div>
+  <ion-slides   [options]="sliderConfig"  class="ion-padding" >
+    <ion-slide class="box2" ></ion-slide>
+    <ion-slide class="box2" ></ion-slide>
+    <ion-slide class="box2" ></ion-slide>
+    
+  </ion-slides>
+
+  <!-- special offers -->
+  <div class="tag">
+    <p>SPecial Offers</p>
+    <span>View All</span>
+  </div>
+  <ion-slides   [options]="sliderConfig"  class="ion-padding" >
+    <ion-slide class="box3" > </ion-slide>
+    <ion-slide class="box3" > </ion-slide>
+    <ion-slide class="box3" > </ion-slide>
+    
+  </ion-slides>
+ 
+
+ 
 </ion-content>

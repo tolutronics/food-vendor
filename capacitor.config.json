@@ -1,6 +1,6 @@
 {
   "appId": "io.ionic.starter",
-  "appName": "birthstory",
+  "appName": "food",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
